@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1학기 작업 내용 정리 (1st Semester Work Summary)</title>
+    <meta name="description" content="A beautiful timeline summarizing 1st semester progress, tasks, and reflections.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Prism.js for code highlighting (Okaidia dark theme) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="hero">
+            <h1 class="hero-title">1학기 작업 여정</h1>
+            <p class="hero-subtitle">My 1st Semester Journey & Reflections</p>
+        </header>
+
+        <section class="timeline-container" id="timeline">
+            <!-- Timeline items will be injected here by app.js -->
+        </section>
+    </main>
+
+    <!-- Code Visualization Modal -->
+    <div id="codeModal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <button id="closeModal" class="close-btn">&times;</button>
+            <h2 id="modalTitle" class="modal-title">Code</h2>
+            <pre><code id="modalCode" class="language-python"></code></pre>
+        </div>
+    </div>
+
+    <!-- Prism.js for python highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
